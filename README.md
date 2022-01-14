@@ -1,5 +1,5 @@
 # State Management With WebAssembly & Rust
-Blog post on post [Medium](https://seanwatters.medium.com/state-management-with-webassembly-rust-66d80432959f) and [Dev.to](https://dev.to/seanwatters/state-management-with-webassembly-rust-5a1g).
+My game based off of different game described at [Medium](https://seanwatters.medium.com/state-management-with-webassembly-rust-66d80432959f) and [Dev.to](https://dev.to/seanwatters/state-management-with-webassembly-rust-5a1g).
 
 ## Starting Up
 After cloning:

@@ -1,1 +1,1 @@
-import("./counter.js").catch(console.error);
+import("./game.js").catch(console.error);

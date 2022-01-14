@@ -1,6 +1,6 @@
 use wasm_bindgen::prelude::*;
-use web_sys::console;
-mod counter_state;
+use web_sys::console; 
+mod game_state;
 
 
 // When the `wee_alloc` feature is enabled, this uses `wee_alloc` as the global

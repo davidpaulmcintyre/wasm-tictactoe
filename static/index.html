@@ -2,13 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Counter App</title>
+    <title>TicTacToe App</title>
+  <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-    <script src="index.js"></script>
-    <div id="counter">0</div>
-    <button id="increment">+</button>
-    <button id="decrement">-</button>
+    <script src="index.js"></script> 
+ 
+    <table id="grid" border=1>
+      <tr>
+        <td><div onclick="clickHandler(this)" ></div></td>
+        <td><div onclick="clickHandler(this)" ></div></td>
+        <td><div onclick="clickHandler(this)" ></div></td>
+      </tr>
+      <tr>
+        <td><div onclick="clickHandler(this)" ></div></td>
+        <td><div onclick="clickHandler(this)" ></div></td>
+        <td><div onclick="clickHandler(this)" ></div></td>
+      </tr>
+      <tr>
+        <td><div onclick="clickHandler(this)" ></div></td>
+        <td><div onclick="clickHandler(this)" ></div></td>
+        <td><div onclick="clickHandler(this)" ></div></td>
+      </tr>
+    </table>
+    <button id="reset" onclick="onReset()">Reset</button>
+
+    <script>
+      function clickHandler(element) {
+        const row = element.parentNode.parentNode.rowIndex;
+        const col = element.parentNode.cellIndex; 
+        console.log(row, col)
+        // val of player returned for successful move
+        const result = handlePlayerMove(row, col);
+        if (result){
+          element.innerHTML = result[0];
+          if (result[1]){
+            alert('game over, the winner is ' + result[0].toString())
+          }
+        }
+      }  
+
+      function onReset(){
+        handleReset();
+      }
+      
+    </script>
   </body>
 </html>
