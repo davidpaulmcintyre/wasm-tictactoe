@@ -1,18 +1,9 @@
 #grid {
     border: 1px solid black;
-    border-spacing: 0;
-    /* display: flex;
-    flex-direction: column; */
+    border-spacing: 0; 
     width: 150px;
-    height: 150px;
-    /* flex: 1; */
-}
-/* 
-#grid > div {
-    height: 200px; 
-    display: flex;
-    flex-direction: row;
-} */
+    height: 150px; 
+} 
 
 #grid div {
     height: 50px;

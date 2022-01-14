@@ -77,7 +77,6 @@ impl GameState {
                 return true;
             }
             // check cols
-            let mut j = 0;
             if grid[0][i].is_some() && grid[0][i] == grid[1][i] && grid[1][i] == grid[2][i] {
                 return true;
             }
