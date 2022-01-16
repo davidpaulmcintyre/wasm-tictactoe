@@ -1,0 +1,15 @@
+#grid {
+    border: 1px solid black;
+    border-spacing: 0; 
+    width: 150px;
+    height: 150px; 
+} 
+
+#grid div {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
